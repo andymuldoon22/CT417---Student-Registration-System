@@ -43,10 +43,8 @@ public class StudentTest {
     @org.junit.Test
     public void testGetUsername() {
         System.out.println("getUsername");
-        Student instance = new Student();
-        String expResult = "Liam11";
-        instance.Age = 11;
-        instance.Name="Liam";
+        Student instance = new Student("Andy", 22, 12345, "14/12/1994");
+        String expResult = "Andy22";
         String result = instance.getUsername();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

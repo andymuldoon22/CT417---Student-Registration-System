@@ -14,9 +14,49 @@ import java.util.Date;
  */
 public class Course {
     
-    String course_name;
-    ArrayList<String> modules = new ArrayList<String>();
-    Date startDate = new Date();
-    Date endDate = new Date();
+    private String CourseName;
+    private ArrayList<String> Modules = new ArrayList<String>();
+    private Date StartDate = new Date();
+    private Date EndDate = new Date();
+    
+    public Course(String course_name, ArrayList modules, Date startDate, Date endDate){
+        this.setCourseName(course_name);
+        this.setModules(modules);
+        this.setStartDate(startDate);
+        this.setEndDate(endDate);
+    
+    }
+
+    private String setCourseName(String course_name) {
+        return this.CourseName = course_name;
+    }
+    
+    private String getCourseName() {
+        return this.CourseName;
+    }
+
+    private ArrayList<String> setModules(ArrayList modules) {
+        return this.Modules = modules;
+    }
+    
+    private ArrayList<String> getModules() {
+        return this.Modules;
+    }
+
+    private Date setStartDate(Date startDate) {
+        return this.StartDate = startDate;
+    }
+    
+    private Date getStartDate() {
+        return this.StartDate;
+    }
+
+    private Date setEndDate(Date endDate) {
+        return this.EndDate = endDate; 
+    }
+    
+    private Date getEndDate() {
+        return this.EndDate; 
+    }
     
 }

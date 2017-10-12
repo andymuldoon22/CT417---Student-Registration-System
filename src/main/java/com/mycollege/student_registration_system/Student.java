@@ -13,11 +13,19 @@ import java.util.Date;
  */
 public class Student {
     
-    String Name;
-    int Age;
-    Date DOB;
-    int ID;
-    String Username;
+    private String Name;
+    private int Age;
+    private String DOB;
+    private int ID;
+    private String Username;
+    
+    public Student(String name, int age, int id, String dob){
+        this.setName(name);
+        this.setAge(age);
+        this.setId(id);
+        this.setDob(dob);
+        
+    }
     
     public String getUsername(){
         
@@ -25,4 +33,30 @@ public class Student {
         
     }
     
+    		public String getName() {
+			return this.Name;
+		}
+
+		public void setName(String name) {
+			this.Name = name;
+		}
+
+		public void setDob(String dob) {
+			this.DOB = dob;
+		}
+		public String getDob() {
+			return this.DOB;
+		}
+		public void setAge(int age) {
+			this.Age = age;
+		}
+		public int getAge() {
+			return this.Age;
+		}
+       		public void setId(int id) {
+			this.ID = id;
+		}
+		public int getId() {
+			return this.ID;
+		}
 }
