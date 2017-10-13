@@ -6,7 +6,6 @@
 package com.mycollege.student_registration_system;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -16,9 +15,9 @@ public class Module {
     
     private String Module;
     private String ModuleID;
-    private ArrayList<String> Students = new ArrayList<String>(); 
+    private ArrayList<Student> Students = new ArrayList<Student>(); 
     
-    public Module(String module, String moduleid, ArrayList<String> students){
+    public Module(String module, String moduleid, ArrayList<Student> students){
         this.setModule(module);
         this.setModuleID(moduleid);
         this.setStudents(students);
@@ -41,11 +40,11 @@ public class Module {
         return this.ModuleID;
     }
 
-    private ArrayList<String> setStudents(ArrayList<String> students) {
+    private ArrayList<Student> setStudents(ArrayList<Student> students) {
         return this.Students = students;
     }
     
-    private ArrayList<String> getStudents(){
+    private ArrayList<Student> getStudents(){
         return this.Students;
     }
     

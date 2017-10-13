@@ -15,11 +15,11 @@ import java.util.Date;
 public class Course {
     
     private String CourseName;
-    private ArrayList<String> Modules = new ArrayList<String>();
+    private ArrayList<Module> Modules = new ArrayList<Module>();
     private Date StartDate = new Date();
     private Date EndDate = new Date();
     
-    public Course(String course_name, ArrayList modules, Date startDate, Date endDate){
+    public Course(String course_name, ArrayList<Module> modules, Date startDate, Date endDate){
         this.setCourseName(course_name);
         this.setModules(modules);
         this.setStartDate(startDate);
@@ -35,11 +35,11 @@ public class Course {
         return this.CourseName;
     }
 
-    private ArrayList<String> setModules(ArrayList modules) {
+    private ArrayList<Module> setModules(ArrayList<Module> modules) {
         return this.Modules = modules;
     }
     
-    private ArrayList<String> getModules() {
+    private ArrayList<Module> getModules() {
         return this.Modules;
     }
 
