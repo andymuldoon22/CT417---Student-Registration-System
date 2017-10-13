@@ -27,35 +27,35 @@ public class Course {
     
     }
 
-    private String setCourseName(String course_name) {
+    public String setCourseName(String course_name) {
         return this.CourseName = course_name;
     }
     
-    private String getCourseName() {
+    public String getCourseName() {
         return this.CourseName;
     }
 
-    private ArrayList<Module> setModules(ArrayList<Module> modules) {
+    public ArrayList<Module> setModules(ArrayList<Module> modules) {
         return this.Modules = modules;
     }
     
-    private ArrayList<Module> getModules() {
+    public ArrayList<Module> getModules() {
         return this.Modules;
     }
 
-    private Date setStartDate(Date startDate) {
+    public Date setStartDate(Date startDate) {
         return this.StartDate = startDate;
     }
     
-    private Date getStartDate() {
+    public Date getStartDate() {
         return this.StartDate;
     }
 
-    private Date setEndDate(Date endDate) {
+    public Date setEndDate(Date endDate) {
         return this.EndDate = endDate; 
     }
     
-    private Date getEndDate() {
+    public Date getEndDate() {
         return this.EndDate; 
     }
     

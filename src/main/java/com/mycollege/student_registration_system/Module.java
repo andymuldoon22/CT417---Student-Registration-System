@@ -24,27 +24,27 @@ public class Module {
     
     }
 
-    private String setModule(String module) {
+    public String setModule(String module) {
         return this.Module = module;
     }
     
-    private String getModule() {
+    public String getModule() {
         return this.Module;
     }
 
-    private String setModuleID(String moduleid) {
+    public String setModuleID(String moduleid) {
         return this.ModuleID = moduleid;
     }
     
-    private String getModuleID(String moduleid) {
+    public String getModuleID(String moduleid) {
         return this.ModuleID;
     }
 
-    private ArrayList<Student> setStudents(ArrayList<Student> students) {
+    public ArrayList<Student> setStudents(ArrayList<Student> students) {
         return this.Students = students;
     }
     
-    private ArrayList<Student> getStudents(){
+    public ArrayList<Student> getStudents(){
         return this.Students;
     }
     
